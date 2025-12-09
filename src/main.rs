@@ -1,12 +1,5 @@
-fn test(x: &mut u32) {
-    *x += 1;
-    println!("{}", x);
-}
+mod day2;
 
 fn main() {
-    println!("Hello, world!");
-
-    let mut x: u32 = 5;
-
-    test(&mut x);
+    println!("{:?}", day2::day2_2("./inputs/day2.txt"));
 }
